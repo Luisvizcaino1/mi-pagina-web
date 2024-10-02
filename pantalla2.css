@@ -1,0 +1,281 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.head {
+    text-align: center;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    position: relative;
+    height: 65px;
+}
+
+.logo {
+    max-width: 250px;
+}
+
+.persona {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 40px;
+    margin-left: 10px;
+}
+
+.redessociales {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.redessociales img {
+    width: 30px;
+    height: auto;
+}
+
+.urgencias a:hover{
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav.nabvar {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(41, 198, 123, 1);
+    padding: 2px 0;
+    
+}
+
+nav.nabvar a {
+    line-height: 2;
+    margin: 0 15px;
+    text-decoration: none;
+    color:#fff;
+    font-size: 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav.nabvar a:hover {
+    color: rgba(41, 198, 123, 1);
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    
+    
+}
+/* Hero Section */
+.primera {
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+
+/* Titles and subtitles styling */
+.letra1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgba(76, 227, 100, 1);
+    margin-bottom: 10px;
+}
+
+.letra2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.linea-horizontal0,
+.linea-horizontal1,
+.linea-horizontal2 {
+    height: 2px;
+    width: 80%;
+    background-color: black;
+    margin: 15px auto;
+}
+
+/* Mission and Vision Sections */
+.mision,
+.vision {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 0 auto 30px;
+}
+
+.segunda,
+.tercera {
+    width: 280px;
+    height: auto;
+    margin: 0 20px;
+}
+
+.mi,
+.vi {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 60%;
+    margin-left: 20px;
+}
+
+/* Objectives Section */
+.objetivos {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 85%;
+}
+
+.ob {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+}
+
+.carousel-inner {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* Footer Sections */
+footer {
+    background-color: rgba(217, 217, 217, 1); /* Color de fondo */
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px; /* Ancho máximo para mantener el footer centrado */
+    margin: 0 auto;    /* Centrado automático */
+}
+
+.section1, .section2, .section3 {
+    display: inline-block;
+    width: 30%;        /* Ajusta cada sección a 30% del espacio total */
+    padding: 10px;
+    text-align: center;
+    vertical-align: top; /* Alinea verticalmente al top */
+}
+
+.social_media {
+    list-style: none;
+    padding: 0;
+}
+
+.social_media li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social_media a {
+    color: #333;
+    font-size: 24px;
+}
+
+.mapa {
+    max-width: 150px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.fa, .in, .wa, .tu {
+    gap: 10px;
+    width: 30px;
+    height: auto;
+}
+
+.face, .ins, .wha, .twi {
+    text-decoration: none;
+}
+
+/* Media queries para pantallas medianas (tabletas) */
+
+
+/* Media queries para pantallas pequeñas (celulares) */
+
+@media (max-width: 768px)  and (min-width:200px){
+    
+
+    .logo {
+        max-width: 177px;
+    }
+
+    .persona {
+        max-width: 40px;
+        margin-left: 0;
+        flex-direction: column;
+    }
+
+    .redessociales img {
+        width: 20px;
+        flex-direction: column;
+    }
+
+    .nabvar {
+        flex-direction: column;
+    }
+
+    .nabvar a {
+        margin: 5px 0;
+    }
+
+    .general {
+        flex-direction: column;
+        align-items: center;
+    }
+    .mi,.vi {
+        font-size: 10px;
+        margin-bottom: 30px;
+    }
+    .general  {
+        margin-bottom: 20px;
+    }
+
+    .final {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .redes {
+        flex-direction: row; /* Redes en fila en pantallas pequeñas */
+    }
+    .segunda,.tercera{
+        width: 120px;
+        height: 120px;
+    }
+
+}
+/* Media queries para pantallas medianas (tabletas) */
+@media (max-width: 1024px) {
+    .section1, .section2, .section3 {
+        width: 45%; /* Cada sección ocupará el 45% para tener dos secciones por fila */
+        margin-bottom: 20px;
+    }
+}
+
+/* Media queries para pantallas pequeñas (celulares) */
+@media (max-width: 600px) {
+    .section1, .section2, .section3 {
+        width: 100%; /* Ocupan el 100% en pantallas pequeñas */
+        margin-bottom: 10px;
+    }
+    
+    .social_media a {
+        font-size: 20px; /* Tamaño de iconos más pequeño en móviles */
+    }
+
+    .container {
+        max-width: 100%;
+    }
+}

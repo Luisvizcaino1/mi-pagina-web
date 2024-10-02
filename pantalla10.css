@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('img/para/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.head {
+    text-align: center;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+.logo {
+    max-width: 250px;
+}
+
+.persona {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 40px;
+    margin-left: 10px;
+}
+
+.redessociales {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.redessociales img {
+    width: 30px;
+    height: auto;
+}
+
+.urgencias a:hover {
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    background-color: rgba(243, 8, 8, 0.8); 
+}
+.urgencias {
+    cursor: pointer;
+}
+
+nav.nabvar {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(41, 198, 123, 1);
+    padding: 2px 0;
+    margin: -8px -2px;
+}
+
+nav.nabvar a {
+    line-height: 2;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav.nabvar a:hover {
+    color: rgba(41, 198, 123, 1);
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.formulario {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    position: relative;
+    background-image: url('fondoformulario.jpg'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Campos del formulario */
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.F {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+label {
+    text-align: right;
+    width: 120px;
+    position: relative;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #e74c3c; /* Rojo */
+    color: white;
+    padding: 15px 32px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    grid-column: 1 / span 2;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+.two {
+    margin-left: 50px;
+}
+
+.lab1, .lab2, .lab3, .lab4 {
+    width: 100px;
+    height: 5px;
+}
+
+.la2 {
+    display: flex;
+}
+
+/* Responsividad (opcional) */
+@media (max-width: 768px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+}

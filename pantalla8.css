@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.head {
+    text-align: center;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+.logo {
+    max-width: 250px;
+}
+
+.persona {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 40px;
+    margin-left: 10px;
+}
+
+.redessociales {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.redessociales img {
+    width: 30px;
+    height: auto;
+}
+
+.urgencias a:hover{
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    background-color: rgba(243, 8, 8, 0.8); 
+}
+.urgencias{
+    cursor: pointer;
+}
+nav.nabvar {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(41, 198, 123, 1);
+    padding: 2px 0;
+    margin: -8px -2px;
+    
+}
+
+nav.nabvar a {
+    line-height: 2;
+    margin: 0 15px;
+    text-decoration: none;
+    color:#fff;
+    font-size: 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav.nabvar a:hover {
+    color: rgba(41, 198, 123, 1);
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    
+    
+}
+.primero{
+    border: 1px solid rgb(121, 124, 126);
+    width: 315px;
+    height: 400px;
+    margin-right: 43px;
+
+    
+}
+.segundo{
+    border: 1px solid rgb(121, 124, 126);
+    width: 315px;
+    height: 400px;
+    margin-left: 43px;
+}
+.todo{
+    display: flex;
+    justify-content: center;
+  
+}
+.titulo,.titulo2{
+    width: 315px;
+    height: 50px;
+    background-color: rgba(26, 210, 250, 1);
+    border-radius: 5px;
+    border: 1px solid rgb(80, 82, 83);
+    margin: 0px 0px 10px 0px ;
+}
+.con1,.con2,.con3{
+    border: 1px solid rgb(121, 124, 126);
+    display: flex;
+    border-radius: 5px;
+    height: 78px;
+    width: 290px;
+    margin-left: 12px;
+    
+  
+}
+.pro1,.pro2,.pro3{
+    width: 90px;
+    height: 74px;
+    padding: 4px;
+}
+.cantidad{
+    width: 35px;
+    height: 15px;
+}
+.cant{
+    width: 50px;
+    height: 30px;
+    margin: 30px 0px 0px 12px;
+}
+.des1,.des2,.des3{
+    font-size: 11px;
+    margin: 23px 0px 0px 0px;
+}
+.metodo{
+    display: flex;
+    justify-content: center;
+}
+.tarj{
+    border: 1px solid rgb(80, 82, 83);
+    width: 120px;
+    height: 70px;
+   margin-right: 10px;
+   border-radius: 10px;
+   background-color: rgba(183, 189, 192, 1);
+    
+}
+.pse{
+    border: 1px solid rgb(80, 82, 83);
+    width: 120px;
+    height: 70px;
+    border-radius: 10px;
+}
+    
+
+.tarjeta{
+    
+    width: 95px;
+    height: 43px;
+}
+.pagarpse{
+    width: 42px;
+    height: 32px;
+    padding: 6px;
+}
+.p1,.p2{
+    font-size: 9px;
+    height: 0px;
+}
+label::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.input1 {
+    width: 85%;
+    padding: 3px;
+    border: 1px solid #000000;
+    border-radius: 2px;
+}
+.input2 {
+    width: 26%;
+    padding: 1px;
+    border: 1px solid #000000;
+    border-radius: 2px;
+}
+.input3 {
+    width: 10%;
+    padding: 3px;
+    border: 1px solid #000000;
+    border-radius: 2px;
+}
+.letras2,.letras3{
+    font-size: 11px;
+}
+button{
+    background-color: rgba(26, 210, 250, 1);
+    border-radius: 2px;
+    width: 65px;
+}
+footer {
+    background-color: rgba(217, 217, 217, 1); /* Color de fondo */
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px; /* Ancho máximo para mantener el footer centrado */
+    margin: 0 auto;    /* Centrado automático */
+}
+
+.section1, .section2, .section3 {
+    display: inline-block;
+    width: 30%;        /* Ajusta cada sección a 30% del espacio total */
+    padding: 10px;
+    text-align: center;
+    vertical-align: top; /* Alinea verticalmente al top */
+}
+
+.social_media {
+    list-style: none;
+    padding: 0;
+}
+
+.social_media li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social_media a {
+    color: #333;
+    font-size: 24px;
+}
+
+.mapa {
+    max-width: 150px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.fa, .in, .wa, .tu {
+    gap: 10px;
+    width: 30px;
+    height: auto;
+}
+
+.face, .ins, .wha, .twi {
+    text-decoration: none;
+}
+
+/* Media queries para pantallas medianas (tabletas) */
+@media (max-width: 1024px) {
+    .section1, .section2, .section3 {
+        width: 45%; /* Cada sección ocupará el 45% para tener dos secciones por fila */
+        margin-bottom: 20px;
+    }
+}
+
+/* Media queries para pantallas pequeñas (celulares) */
+@media (max-width: 600px) {
+    .section1, .section2, .section3 {
+        width: 100%; /* Ocupan el 100% en pantallas pequeñas */
+        margin-bottom: 10px;
+    }
+    
+    .social_media a {
+        font-size: 20px; /* Tamaño de iconos más pequeño en móviles */
+    }
+
+    .container {
+        max-width: 100%;
+    }
+}

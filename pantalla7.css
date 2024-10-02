@@ -1,0 +1,273 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.head {
+    text-align: center;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+.logo {
+    max-width: 250px;
+}
+
+.persona {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 40px;
+    margin-left: 10px;
+}
+
+.redessociales {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.redessociales img {
+    width: 30px;
+    height: auto;
+}
+
+.urgencias a:hover{
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    background-color: rgba(243, 8, 8, 0.8); 
+}
+.urgencias{
+    cursor: pointer;
+}
+nav.nabvar {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(41, 198, 123, 1);
+    padding: 2px 0;
+    margin: -8px -2px;
+    
+}
+
+nav.nabvar a {
+    line-height: 2;
+    margin: 0 15px;
+    text-decoration: none;
+    color:#fff;
+    font-size: 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav.nabvar a:hover {
+    color: rgba(41, 198, 123, 1);
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    
+    
+}
+.todo_contenido{
+    margin-left: 130px;
+}
+.pedido1{
+    width: 40%;
+    font-size: 8px;
+    border: 1px solid rgba(27, 168, 248, 1);
+    margin-left: 1%;
+}
+.letras1{
+    background-color: rgba(76, 169, 227, 0.67);
+    display: flex;
+}
+.le1{
+    margin-left: 20px;
+}
+.corazon{
+    width: 40px;
+    height: 35px;
+     margin-right: 53%;
+}
+.contenido1{
+    display: flex;
+    justify-content: space-around;
+}
+.pro1,.pro2{
+    width: 158px;
+    height: 151px;
+   
+    
+}
+.cantidad{
+    width: 44px;
+    height: 18px;
+}
+.descripcion{
+    font-size: 18px;
+}
+.precios{
+    margin: 2px 0px 0px 43px;
+    width: 100px;
+}
+.descuento{
+  
+    color: red;
+}
+.num1{
+    text-decoration: line-through;
+    font-size: 15px;
+}
+.num11{
+    font-size: 15px;
+
+}
+.disponibles{
+    font-size: 12px;
+}
+.atras{
+    height: 20px;
+}
+button.atras{
+    height: 27px;
+    color: red;
+    margin: 5px 0px 0px 0px;
+}
+
+.general{
+    display: flex;
+}
+.resumen{
+    margin: 38px 0px 0px 265px ;
+    border: 1px solid rgba(27, 168, 248, 1);
+    
+
+
+  
+}
+.compra{
+    display: flex;
+    width: 140px;
+    height: 20px;
+    border: 1px solid rgba(27, 168, 248, 1);
+
+    
+}
+.carrito2{
+    width: 20px;
+    height: 20px;
+    margin-left: 15%;
+}
+.comprado,.usuario,.total_pagar{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.prec{
+    width:70px ;
+    height: 8px;
+    margin: 9px 0px 0px 10px ;
+}
+.nombre_usuario{
+    width:70px ;
+    height: 8px;
+    margin: 9px 0px 0px 35px ;
+}
+.prec2{
+    width:70px ;
+    height: 8px;
+    margin: 9px 0px 0px 21px ;
+}
+.tienda{
+    margin-right: 54%;
+}
+button.pagar{
+    max-width: 100%;
+    height: 30px;
+   background-color:  rgba(41, 198, 123, 1);
+   border-radius: 5px;
+   border: 5px;
+}
+
+footer {
+    background-color: rgba(217, 217, 217, 1); /* Color de fondo */
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px; /* Ancho máximo para mantener el footer centrado */
+    margin: 0 auto;    /* Centrado automático */
+}
+
+.section1, .section2, .section3 {
+    display: inline-block;
+    width: 30%;        /* Ajusta cada sección a 30% del espacio total */
+    padding: 10px;
+    text-align: center;
+    vertical-align: top; /* Alinea verticalmente al top */
+}
+
+.social_media {
+    list-style: none;
+    padding: 0;
+}
+
+.social_media li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social_media a {
+    color: #333;
+    font-size: 24px;
+}
+
+.mapa {
+    max-width: 150px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.fa, .in, .wa, .tu {
+    gap: 10px;
+    width: 30px;
+    height: auto;
+}
+
+.face, .ins, .wha, .twi {
+    text-decoration: none;
+}
+
+/* Media queries para pantallas medianas (tabletas) */
+@media (max-width: 1024px) {
+    .section1, .section2, .section3 {
+        width: 45%; /* Cada sección ocupará el 45% para tener dos secciones por fila */
+        margin-bottom: 20px;
+    }
+}
+
+/* Media queries para pantallas pequeñas (celulares) */
+@media (max-width: 600px) {
+    .section1, .section2, .section3 {
+        width: 100%; /* Ocupan el 100% en pantallas pequeñas */
+        margin-bottom: 10px;
+    }
+    
+    .social_media a {
+        font-size: 20px; /* Tamaño de iconos más pequeño en móviles */
+    }
+
+    .container {
+        max-width: 100%;
+    }
+}

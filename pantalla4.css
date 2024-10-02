@@ -1,0 +1,252 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.head {
+    text-align: center;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+.logo {
+    max-width: 250px;
+}
+
+.persona {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 40px;
+    margin-left: 10px;
+}
+
+.redessociales {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.redessociales img {
+    width: 30px;
+    height: auto;
+}
+
+.urgencias a:hover{
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    background-color: rgba(243, 8, 8, 0.8); 
+}
+.urgencias{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+
+
+nav.nabvar {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(41, 198, 123, 1);
+    padding: 10px 0;
+}
+
+nav.nabvar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+nav.nabvar a:hover {
+    background-color: #fff;
+    color: rgba(41, 198, 123, 1);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.primera {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.perros img, .gatos img {
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+}
+
+.div1, .div2, .div3, .div4, .div5, .div6,.div7,.div8 {
+    width: 30%;
+    border: 5px solid rgba(41, 198, 123, 1);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.div2, .div5 {
+    border-color: rgba(183, 189, 192, 1);
+}
+
+.div3, .div6 {
+    border-color: rgba(27, 168, 248, 1);
+}
+.div2,.div7{
+    margin-left: 5%;
+}
+.div5,.div8{
+    margin-left: 5%;
+}
+.primeros2,.segundosdos,.primerosgatos,.segundosgatos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+}
+button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 7px 26px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+.perroo, .gatoo {
+    max-width: 95%;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: rgba(217, 217, 217, 1);
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section1, .section2, .section3 {
+    display: inline-block;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+    vertical-align: top;
+    
+}
+.section3{
+    text-decoration: none;
+}
+.mapa {
+    max-width: 150px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.fa, .in, .wa, .tu {
+    width: 30px;
+    height: auto;
+    
+  
+}
+
+@media (max-width: 1024px) {
+    .div1, .div2, .div3, .div4, .div5, .div6,.div7,.div8 {
+        width: 40%;
+    }
+    
+    .section1, .section2, .section3 {
+        width: 40%;
+        margin-bottom: 20px;
+    }
+    
+    .container {
+        padding: 0 10px;  
+    }
+}
+
+@media (max-width: 600px) {
+    .logo {
+        max-width: 162px;
+    }
+
+    .persona {
+        max-width: 40px;
+        margin-left: 0;
+        flex-direction: column;
+    }
+
+    .redessociales img {
+        width: 20px;
+        flex-direction: column;
+    }
+
+    .div1, .div2, .div3, .div4, .div5, .div6,.div7,.div8 {
+        width: 100%;
+    }
+    
+    .section1, .section2, .section3 {
+        width: 100%;
+       
+    }
+    
+    .social_media a {
+        font-size: 20px;
+        text-decoration: none;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .nabvar {
+        flex-direction: column;
+    }
+    
+    .nabvar a {
+        margin: 5px 0;
+    }
+    
+    .general {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .general  {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

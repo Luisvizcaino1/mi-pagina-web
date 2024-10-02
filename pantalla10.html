@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pantalla10.css">
+    <title>Caninos & Felinos - Registro</title>
+</head>
+<body>
+<div class="head">
+    <hr>
+    <div class="cabecera">
+        <img src="logo.png" class="logo" alt="Logo">
+        <div class="cabecera-right">
+            <img src="mi cuenta index.png" class="persona" alt="Persona">
+            <div class="redessociales">
+                <a class="face" href="https://facebook.com/">
+                    <img src="Facebook.png" alt="Facebook" class="facebook">
+                </a>
+                <a class="ins" href="https://Instagram.com/">
+                    <img src="Instagram.png" alt="Instagram" class="Instagram">
+                </a>
+                <a class="wha" href="https://WhatsApp.com/">
+                    <img src="WhatsApp.png" alt="WhatsApp" class="WhatsApp">
+                </a>
+                <a class="twi" href="https://Twitter.com/">
+                    <img src="Twitter.png" alt="Twitter" class="Twitter">
+                </a>  
+            </div>
+            <a href="" class="urgencias">Urgencias presenciales</a>
+        </div>
+    </div>
+    <hr>
+    <nav class="nabvar">
+        <a href="#">Inicio</a>
+        <a href="#">Quienes somos</a>
+        <a href="#">Adopciones</a>
+        <a href="#">Servicios</a>
+        <a href="#">Productos</a>
+    </nav>
+    <hr>
+
+    <div class="formulario">
+         <h2>REGÍSTRATE</h2>
+         <form action="envio.php" method="GET">
+             <div class="form-group">
+              <label for="nombre">Nombre & Apellido</label>
+              <input type="text" id="nombre" name="nombre"/>
+             </div>
+             <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email"/>
+             </div>
+             <div class="form-group">
+              <label for="C">Contraseña</label>
+              <input type="password" id="C" name="C"/>
+             </div>
+             <div class="form-group">
+              <label for="telefono">Teléfono</label>
+              <input type="number" id="telefono" name="telefono"/>
+             </div>
+             
+         </form>  
+
+         <h2>MI PELUDO</h2>   
+         <form action="envio.php" method="GET">
+            <div class="form-group">
+                <label for="nombre-peludo">Nombre</label>
+                <input type="text" id="nombre-peludo" name="nombre-peludo"/>
+            </div>
+            <div class="form-group">
+                <label for="genero">Género</label>
+                <input type="text" id="genero" name="genero"/>
+            </div>
+            <div class="form-group">
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" name="edad"/>
+            </div>
+            <div class="form-group">
+                <label for="raza">Raza</label>
+                <input type="text" id="raza" name="raza"/>
+            </div>
+            <button type="submit">confirmar Registro</button>
+         </form>    
+     </div> 
+     <br>
+</body>
+</html>

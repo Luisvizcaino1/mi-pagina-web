@@ -1,0 +1,336 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.head {
+    text-align: center;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+.logo {
+    max-width: 250px;
+}
+
+.persona {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 40px;
+    margin-left: 10px;
+}
+
+.redessociales {
+    display: flex;
+    gap: 10px;
+    margin-left: 15%;
+}
+
+.redessociales img {
+    width: 30px;
+    height: auto;
+}
+
+.urgencias a:hover{
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    background-color: rgba(243, 8, 8, 0.8); 
+}
+.urgencias{
+    cursor: pointer;
+}
+nav.nabvar {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(41, 198, 123, 1);
+    padding: 2px 0;
+    margin: -8px -2px;
+    
+}
+
+nav.nabvar a {
+    line-height: 2;
+    margin: 0 15px;
+    text-decoration: none;
+    color:#fff;
+    font-size: 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav.nabvar a:hover {
+    color: rgba(41, 198, 123, 1);
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    
+    
+}
+
+
+.B {color: black;
+    font-size: 20px;
+    text-align: center;
+
+}
+.b {
+    color: black;
+    font-size: 12px;
+    text-align: center;
+}
+.carritodecompras{
+    width:6% ;
+    height: 20%;
+    margin: -121px 0px 0px 38px;
+}
+
+.primera, .segunda {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: -8px auto;
+}
+.primera {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.2);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+.general {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.sugerencias, .noticias, .recordatorios {
+    text-align: center;
+    
+}
+.sugerencias{
+    margin: 0px 0px 0px 38px;
+    
+}
+
+.sugerencia, .noticia, .recordatorio {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.sugerencias img, .noticias img, .recordatorios img {
+    transition: transform 0.5s ease-in-out, opacity 0.2s ease-in-out;
+  }
+  
+  .sugerencias img:hover, .noticias img:hover, .recordatorios img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  
+.in1,.in2,.recordatorios img {
+    max-width: 85%;
+    height: auto;
+}
+.segunda {
+    animation: slideDown 1s ease-in-out;
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(1);
+
+        
+      opacity: 1;
+    }
+  }
+
+.final {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos uniformemente */
+    align-items: center;
+    padding: 20px;
+}
+
+.contact, .ubicacion, .redes {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.contact, .ubicacion, .red {
+    margin: 0;
+}
+
+.ubicacion {
+    max-width: 200px; /* Reduce el ancho máximo del div */
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto; /* Centra el div */
+}
+
+.ubicacion  {
+    width: 100%;
+    height: auto;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes .titulo {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.redes {
+    width: 30px;
+    height: auto;
+    margin: 0 5px; /* Espacio entre las imágenes */
+}
+
+.redes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px)  and (min-width:200px){
+    
+
+    .logo {
+        max-width: 162px;
+    }
+
+    .persona {
+        max-width: 40px;
+        margin-left: 0;
+        flex-direction: column;
+    }
+
+    .redessociales img {
+        width: 20px;
+        flex-direction: column;
+    }
+
+    .nabvar {
+        flex-direction: column;
+    }
+
+    .nabvar a {
+        margin: 5px 0;
+    }
+
+    .general {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .general  {
+        margin-bottom: 20px;
+    }
+
+    .final {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .redes {
+        flex-direction: row; /* Redes en fila en pantallas pequeñas */
+    }
+}
+footer {
+    background-color: rgba(217, 217, 217, 1); /* Color de fondo */
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px; /* Ancho máximo para mantener el footer centrado */
+    margin: 0 auto;    /* Centrado automático */
+}
+
+.section1, .section2, .section3 {
+    display: inline-block;
+    width: 30%;        /* Ajusta cada sección a 30% del espacio total */
+    padding: 10px;
+    text-align: center;
+    vertical-align: top; /* Alinea verticalmente al top */
+}
+
+.social_media {
+    list-style: none;
+    padding: 0;
+}
+
+.social_media li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social_media a {
+    color: #333;
+    font-size: 24px;
+}
+
+.mapa {
+    max-width: 150px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.fa, .in, .wa, .tu {
+    gap: 10px;
+    width: 30px;
+    height: auto;
+}
+
+.face, .ins, .wha, .twi {
+    text-decoration: none;
+}
+
+/* Media queries para pantallas medianas (tabletas) */
+@media (max-width: 1024px) {
+    .section1, .section2, .section3 {
+        width: 45%; /* Cada sección ocupará el 45% para tener dos secciones por fila */
+        margin-bottom: 20px;
+    }
+}
+
+/* Media queries para pantallas pequeñas (celulares) */
+@media (max-width: 600px) {
+    .section1, .section2, .section3 {
+        width: 100%; /* Ocupan el 100% en pantallas pequeñas */
+        margin-bottom: 10px;
+    }
+    
+    .social_media a {
+        font-size: 20px; /* Tamaño de iconos más pequeño en móviles */
+    }
+
+    .container {
+        max-width: 100%;
+    }
+}
